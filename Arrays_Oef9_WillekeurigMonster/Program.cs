@@ -16,8 +16,36 @@ namespace Arrays_Oef9_WillekeurigMonster
         static public String[] _monsters = new string[10];
         static public int[] _level = new int[10];
 
+
+        // GUI
         static void Main(string[] args)
         {
+            // Lokale varialben 
+            byte keuze = 0;
+
+            // Scherm leegmaken 
+            Console.Clear();
+
+            do
+            {
+                try
+                {
+                    // Keuze menu
+                    Console.Clear();
+
+                    // Keuze menu
+                    Console.WriteLine("Maak uw keuze uit volgend menu:");
+                    Console.WriteLine("\n\n   1) Invoegen monsters")
+
+                }
+                catch
+                {
+
+                }
+            }
+            while ();
+
+
         }
 
 
