@@ -162,7 +162,7 @@ namespace Arrays_Oef9_WillekeurigMonster
                     else if (keuze == 5)
                     {
                         Console.Write("Geef het level van de speler: ");
-                        int lvl = int.Parse(Console.ReadLine()) 
+                        int lvl = int.Parse(Console.ReadLine());
 
                         Console.WriteLine(KiesWillekeurigMonster(lvl));
                         Console.WriteLine();
@@ -217,7 +217,7 @@ namespace Arrays_Oef9_WillekeurigMonster
 
             for(int i = 0; i < _monsters.Count(); i ++)
             {
-                if (_monsters[i] != null)
+                if (_monsters[i] == null)
                 {
                     antwoord = i;
                     break;
@@ -270,7 +270,7 @@ namespace Arrays_Oef9_WillekeurigMonster
             {
                 if (_monsters[i] != null)
                 {
-                    antwoord += $"{(i+1).ToString()}) monster: {_monsters[i]} ( lvl:{_level[i].ToString()} \n)";
+                    antwoord += $"{(i+1).ToString()}) monster: {_monsters[i]} ( lvl:{_level[i].ToString()} )\n";
                 }
             }
 
